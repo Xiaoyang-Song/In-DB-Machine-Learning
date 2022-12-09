@@ -13,18 +13,15 @@ List the UNI and names of your team members, and what each person contributed in
 ## In-DB machine learning/MADlib
 
 ### Introduction
-Data is the most important ingredient in Machine Learning (ML). Traditionally, we train our ML models outside the database, which can be complex and expensive. However, with the idea of In-DB Machine Learning, we can train ML models inside the database. In general, ML models are processed as regular tables inside the database, and we can simply interact with ML models with SQL queries. Life seems easier now!
 
-#### SQL can do many things
+From 4111 lectures, we learned that SQL's unique features could help us solve many problems simply. For example, extract data with the simple SELECT statement, do aggregation with functions like COUNT and AVG, solve graph problems like what we did in Project 2, and even solve recursive problems with WITH Queries, etc. One natural thing to think about is: can we use SQL to do even more things, like Machine learning? 
 
-- Simple select statement
-- Simple mathematics: aggregation like count and avg
-- Sophisticated math problem: graph problem as in project 2
-- With recursive WITH: can even solve recursion problem
-- One natural thing to think about: can it do even more things? like Linear Regression and machine learning?
+The answer is YES! 
+
+As we know, data is the most important ingredient in Machine Learning (ML). Traditionally, we train our ML models outside the database, which can be complex and expensive. However, with the idea of In-DB Machine Learning, we can train ML models inside the database. In general, ML models are processed as regular tables inside the database, and we can simply interact with ML models with SQL queries. 
 
 #### Why using SQL to do ML (Pros):
-- DBMS has a very good property called Integrity Constraint (IC), which make the data clean. As Prof. Wu mentioned in the very first lecture, people spent about 80 percent of the time doing data cleaning. Doing ML directly in DB can mitigate this issue.
+- DBMS has a very good property called Integrity Constraint (IC), which make the data clean. As Prof. Wu mentioned in the very first lecture, people spent about 80% of the time doing data cleaning. Doing ML directly in DB can mitigate this issue.
 - Instead of downloading and doing ML elsewhere, doing ML in DB is more efficient.
 - Can avoid moving data around.
 - Exploit advantages of query optimization procedure of DBMS.

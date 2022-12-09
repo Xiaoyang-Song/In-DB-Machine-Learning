@@ -1,7 +1,3 @@
-**FOLLOW THIS TEMPLATE BY COPYING IT INTO YOUR OWN PAGE**
-
-Up to five students can be part of a team that contributes to a page.
-List the UNI and names of your team members, and what each person contributed in sufficient detail that the staff can identify your contributions.
 
 - xs2485 Xiaoyang Song
   - Wrote the example

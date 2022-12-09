@@ -3,12 +3,10 @@
 Up to five students can be part of a team that contributes to a page.
 List the UNI and names of your team members, and what each person contributed in sufficient detail that the staff can identify your contributions.
 
-- ew2493 Eugene Wu
-  - wrote the template
-- ab1234 Alagash Brew
-  - Wrote the problem, alternatives, and relationship with 4111
-- yz9876 Yats Zee
-  - clarified second step in tutorial with a code snippet
+- xs2485 Xiaoyang Song
+  - Wrote the example
+- hl3608 Han Liu
+  - Wrote the introduction
 
 ## In-DB machine learning/MADlib
 

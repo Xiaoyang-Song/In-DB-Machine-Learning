@@ -33,11 +33,9 @@ In this tutorial, we will introduce [MindsDB](https://mindsdb.com/), an open-sou
 Remember, the more detailed and thorough you contrast the technology with the topics in class the better.
 We've discussed the relational model, constraints, SQL features, transactions, query execution and optimization, and recovery. Pick a subset of topics to really dive deep and compare and contrast the similarities and differences between our discussion in class and the technology.
 
-### Tutorial
+## Tutorial
 
-**Note: Installation is less relevant than a tutorial highlighting the main concepts as they relate to 4111.**
-
-#### Example
+### Example
 
 In our project 1, we made a Web App about the restaurant ratings and violation records in New York City, where we displayed restaurants locations, ratings, and violation records, and enabled our users to interactively browse those records. In addition, in our Web App, users are also allowed to like/hate and post comments to the restaurants. When we are doing project 1, we originally want to do a recommendation system, which can automatically recommend restaurant to users based on the quality of the restaurants. However, we haven't done that due to time limit.
 
@@ -48,6 +46,10 @@ The basic logic is that we want to recommend restaurants to users based on the o
 - the total number of violation records they had (**num_violations**)
 - the total number of comments they received (**num_comments**)
 
-#### Tutorial
+And using all those four statistics, we want to predict the **rating** of that restaurant. Now we will walk you through how we solve this Machine Learning problem in the Database using an online platform [MindsDB](https://mindsdb.com/).
+
+**Note**: our original database in project 1 contains about 5000 records and using all of its data is not a good choice when doing a tutorial; at the same time, it requires many table joins to actually get the four statistics for each restaurants, which is not the point of this tutorial. Therefore, we choose to make a **demo** table and some sample data by ourselves (all data are modified from our original project 1 database) and using them to make the tutorial more understandable.
+
+### Tutorial
 
 Write a short tutorial on how to use the technology to solve the example. It may help to link to a working example (github repo or colab notebook), or a Loom tutorial video.

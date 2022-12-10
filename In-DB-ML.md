@@ -50,6 +50,46 @@ And using all those four statistics, we want to predict the **rating** of that r
 
 **Note**: our original database in project 1 contains about 5000 records and using all of its data is not a good choice when doing a tutorial; at the same time, it requires many table joins to actually get the four statistics for each restaurants, which is not the point of this tutorial. Therefore, we choose to make a **demo** table and some sample data by ourselves (all data are modified from our original project 1 database) and using them to make the tutorial more understandable.
 
+#### Demo Table & Sample Data
+
+We created a **demo** table consisting of restaurant id (**rid**) as key, restaurant rating (**rating**) as the label (i.e. y value) for regression problem, and all of the four statistics that we mentioned in the previous section (i.e. x values for regression). Here is how it looks like:
+(**Note**: we need to connect to our database to do the table creation, which just followed what we did for Project 1)
+
+```sql
+%%sql
+DROP TABLE IF EXISTS DEMO;
+CREATE TABLE IF NOT EXISTS DEMO(
+    r_id int PRIMARY KEY,
+     rating float,
+     num_likes int,
+     num_hates int,
+     num_violations int,
+     num_comments int
+);
+
+INSERT INTO demo VALUES
+(0, 20, 8, 2, 4, 3 ),
+(1, 21, 9, 4, 2, 6),
+(2, 35, 2, 1, 0, 2),
+(3, 25.5, 2, 8, 1, 2),
+(4, 3, 0, 6, 3, 7),
+(5, 2, 1, 9, 2, 1),
+(6, 17, 2, 3, 4, 3),
+(7, 15.5, 2, 0, 3, 6),
+(8, 12.5, 5, 8, 4, 3),
+(9, 0, 0, 10, 7, 4),
+(10, 23, 6, 3, 3, 8),
+(11, 12, 4, 2, 6, 3),
+(12, 18, 6, 2, 3, 1),
+(13, 14, 3, 3, 3, 3),
+(14, 15, 4, 1, 4, 4),
+(15, 35, 2, 1, 0, 2),
+(16, 25.5, 2, 8, 1, 2),
+(17, 3, 0, 6, 4, 7),
+(18, 21, 11, 3, 2, 1),
+(19, 16, 5, 3, 4, 3)
+```
+
 ### Tutorial
 
 Write a short tutorial on how to use the technology to solve the example. It may help to link to a working example (github repo or colab notebook), or a Loom tutorial video.

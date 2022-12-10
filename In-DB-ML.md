@@ -106,11 +106,13 @@ Now, with our demo data, we can proceed to do Machine Learning using **MindsDB**
 
 #### Get started with MindsDB
 
-### Reflections
+### Reflection & Conclusion
 
 There are many other platforms or extensions that are related to doing machine learning in database. One popular approach is to use [MADlib](https://madlib.apache.org/). We also thoroughly researched on it but we found that there are four advantages of using **MindsDB** over **MADlib**:
 
-- MADlib only supports Postgresql with certain versions: for example, Postgresql 14.5 and the latest version of 15.0 is not supported by MADlib. Therefore, it is not compatible with the latest release and can not exploit the advantages of those new SQL features. (In addition, changing versions is a great pain for most programmers)
-- MADlib is harder to install and use in general. The installation has many prerequisites (i.e. installation of other packages are also required). However, for MindsDB, there is no need of installation at all! It is an online platform.
-- In MindsDB, it is easy to visualize the underlying training process and models, whereas in MADlib, it is not easy to achieve.
-- MindsDB is new compared to MADlib, why don't we stick with new technology if the older one is not better!
+1. MADlib only supports Postgresql with certain versions: for example, Postgresql 14.5 and the latest version of 15.0 is not supported by MADlib. Therefore, it is not compatible with the latest release and can not exploit the advantages of those new SQL features. (In addition, changing versions is a great pain for most programmers)
+2. MADlib is harder to install and use in general. The installation has many prerequisites (i.e. installation of other packages are also required). However, for MindsDB, there is no need of installation at all! It is an online platform.
+3. In MindsDB, it is easy to visualize the underlying training process and models, whereas in MADlib, it is not easy to achieve.
+4. MindsDB is new compared to MADlib, why don't we stick with new technology if the older one is not better!
+
+In general, doing Machine Learning in Database is not hard with MindsDB and its advantages are obvious as we introduced in the first few sections of this tutorial. Let's keep the data in the Database and do ML in database in the future!

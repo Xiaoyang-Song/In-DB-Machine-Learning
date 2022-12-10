@@ -151,11 +151,11 @@ FROM mindsdb.models
 WHERE name='restaurants_ratings_model';
 ```
 
-Then, Simply run the above query to check on current model status and configurations. Note that _mindsdb.models_ is the table that contains all the models that we have created. Here is what it should look like:
+Then, simply run the above query to check on current model status and configurations. Note that _mindsdb.models_ is the table that contains all the models that we have created. Here is what it should look like:
 
 <img width="1817" alt="image" src="https://user-images.githubusercontent.com/30332629/206827762-160ffe30-55d2-4a6d-99be-b4ebce7eb4a9.png">
 
-After the column STATUS becomes _complete_, we are good to go have some predictions!
+As you can see the current status is **training**, implying that the model is being trained now. After the column STATUS becomes **complete**, we are done and make some predictions!
 
 #### Make Predictions
 

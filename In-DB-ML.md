@@ -43,8 +43,10 @@ In our project 1, we made a Web App about the restaurant ratings and violation r
 
 The basic logic is that we want to recommend restaurants to users based on the overall quality of the restaurants, which are dictated by the attributes **ratings** in the table **Grade** of our project 1. However, those grades are static and will be updated once a month when new inspections are done by government staffs. Therefore, we want to utilize Machine Learning, specifically Linear Regression, to automatically predict the latest **ratings** for all the restaurants in the New York city based on 4 statistics:
 
-- the total number of likes they received (**total_num_likes**)
-- the total number of hates they received (**total_num_hates**)
+- the total number of likes they received (**num_likes**)
+- the total number of hates they received (**num_hates**)
+- the total number of violation records they had (**num_violations**)
+- the total number of comments they received (**num_comments**)
 
 #### Tutorial
 

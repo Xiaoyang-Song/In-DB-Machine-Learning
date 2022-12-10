@@ -159,7 +159,7 @@ As you can see the current status is **training**, implying that the model is be
 
 #### Make Predictions
 
-We want to predict the ratings of a restaurant with features (num_likes = 2, num_hates=8, num_violations=5, num_comments=1):
+Let's make some predictions using our model. For example, we want to predict the ratings of a restaurant with features (num_likes = 2, num_hates=8, num_violations=5, num_comments=1):
 
 ```sql
 SELECT rating
@@ -170,7 +170,7 @@ AND num_violations=5
 AND num_comments=1;
 ```
 
-The result gives us:
+Simply run the above query and the result is the following:
 
 <img width="375" alt="image" src="https://user-images.githubusercontent.com/30332629/206827944-126d44ad-e188-4c1e-8978-8ab43648ca26.png">
 
@@ -185,7 +185,7 @@ AND num_violations=2
 AND num_comments=1;
 ```
 
-The result gives us:
+The result is given by the following:
 
 <img width="375" alt="image" src="https://user-images.githubusercontent.com/30332629/206828047-c15c6961-6a92-42d2-b5f4-a4ee232e4c18.png">
 

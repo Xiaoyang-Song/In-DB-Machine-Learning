@@ -138,6 +138,40 @@ Run the query above to check on model status and its statistics. We got:
 
 After the column STATUS becomes _complete_, we are good to go have some predictions!
 
+#### Make Predictions
+
+We want to predict the ratings of a restaurant with features (num_likes = 2, num_hates=8, num_violations=5, num_comments=1):
+
+```sql
+SELECT rating
+FROM mindsdb.restaurant_ratings_model
+WHERE num_likes = 2
+AND num_hates=8
+AND num_violations=5
+AND num_comments=1;
+```
+
+The result gives us:
+
+<img width="375" alt="image" src="https://user-images.githubusercontent.com/30332629/206827944-126d44ad-e188-4c1e-8978-8ab43648ca26.png">
+
+Another example with features (num_likes = 20, num_hates=0, num_violations=2, num_comments=1):
+
+```sql
+SELECT rating
+FROM mindsdb.restaurant_ratings_model
+WHERE num_likes = 20
+AND num_hates= 0
+AND num_violations=2
+AND num_comments=1;
+```
+
+The result gives us:
+
+<img width="375" alt="image" src="https://user-images.githubusercontent.com/30332629/206828047-c15c6961-6a92-42d2-b5f4-a4ee232e4c18.png">
+
+
+
 ### Conclusion
 
 In general, doing Machine Learning in Database is not hard with MindsDB and its advantages are obvious as we introduced in the first few sections of this tutorial. Let's keep the data in the Database and do ML in database in the future!

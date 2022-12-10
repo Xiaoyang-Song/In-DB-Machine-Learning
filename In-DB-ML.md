@@ -3,7 +3,7 @@
 - hl3608 Han Liu
   - Wrote the introduction
 
-## In-DB machine learning/MADlib
+## In-DB machine learning - MindsDB
 
 ### Introduction
 
@@ -20,7 +20,7 @@ As we know, data is the most important ingredient in Machine Learning (ML). Trad
 - Can avoid moving data around.
 - Exploit advantages of query optimization procedure of DBMS.
 
-In this tutorial, we will introduce an open-source library for scalable in-database analytics and machine learning called [Apache MADlib](https://madlib.apache.org/index.html). It provides data-parallel implementations of mathematical, statistical, graph and machine learning methods for structured and unstructured data. Another trending in-database ML library/platform is [MindsDB](https://mindsdb.com/). Compared to MindsDB, MADlib has been around longer but only runs on PostgreSQL and Greenplum Database. MADlib employs its built-in functions to support in-db ML. MindsDB, by contrast, is more like an intelligence layer on top of the database. It is a cloud platform that can connect to any database and support a variety of ML frameworks.
+In this tutorial, we will introduce [MindsDB](https://mindsdb.com/), an open-source AI layer for existing databases that allows users to effortlessly develop, train and deploy state-of-the-art machine learning models using SQL queries. Another popular in-database ML library is [Apache MADlib](https://madlib.apache.org/index.html). Compared to MindsDB, MADlib has been around longer but only runs on PostgreSQL and Greenplum Database. MADlib employs its built-in functions to support in-db ML. MindsDB, by contrast, is more like an intelligence layer on top of the database. It is a cloud platform that can connect to any database and support a variety of ML frameworks.
 
 ### The Problem and Solution
 

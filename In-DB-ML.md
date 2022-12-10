@@ -31,16 +31,7 @@ In this tutorial, we will introduce [MindsDB](https://mindsdb.com/), an open-sou
 4. Compared to MindsDB, MADlib has been around longer but only runs on PostgreSQL and Greenplum Database. MADlib employs its built-in functions to support in-db ML. MindsDB, by contrast, is more like an intelligence layer on top of the database. It is a cloud platform that can connect to any database and support a variety of ML frameworks.
 5. MindsDB is new compared to MADlib, why don't we stick with new technology if the older one is not better!
 
-### The Problem and Solution
-
-- Explain the problem that it solves.
-- How does the technology solve the problem?
-- What are the alternatives, and what are the pros and cons of the technology compared with alternatives? (what makes it unique?)
-- How it relates to concpts from 4111.
-- **NOTE: illustrating the relationship with concpts from this class IS BY FAR THE MOST IMPORTANT ASPECT of this extra credit assignment**
-
-Remember, the more detailed and thorough you contrast the technology with the topics in class the better.
-We've discussed the relational model, constraints, SQL features, transactions, query execution and optimization, and recovery. Pick a subset of topics to really dive deep and compare and contrast the similarities and differences between our discussion in class and the technology.
+In the following tutorial, we will formulate a problem derived from our project 1 and show how we can solve that by performing machine learning in database.
 
 ## Tutorial & Example Walkthrough
 

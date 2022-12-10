@@ -102,4 +102,8 @@ The table looks like the following:
 
 ### Tutorial
 
-Write a short tutorial on how to use the technology to solve the example. It may help to link to a working example (github repo or colab notebook), or a Loom tutorial video.
+Now, with our demo data, we can proceed to conduct Linear Regression!
+
+#### Get started with MindsDB
+
+

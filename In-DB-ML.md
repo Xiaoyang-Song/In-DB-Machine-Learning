@@ -151,7 +151,7 @@ FROM mindsdb.models
 WHERE name='restaurants_ratings_model';
 ```
 
-Run the query above to check on model status and its statistics. We got:
+Then, Simply run the above query to check on current model status and configurations. Note that _mindsdb.models_ is the table that contains all the models that we have created. Here is what it should look like:
 
 <img width="1817" alt="image" src="https://user-images.githubusercontent.com/30332629/206827762-160ffe30-55d2-4a6d-99be-b4ebce7eb4a9.png">
 

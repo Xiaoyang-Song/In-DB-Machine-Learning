@@ -87,8 +87,18 @@ INSERT INTO demo VALUES
 (16, 25.5, 2, 8, 1, 2),
 (17, 3, 0, 6, 4, 7),
 (18, 21, 11, 3, 2, 1),
-(19, 16, 5, 3, 4, 3)
+(19, 16, 5, 3, 4, 3);
 ```
+
+We can use the following the visualize the table:
+
+```sql
+%%sql SELECT * FROM DEMO
+```
+
+The table looks like the following:
+
+<img width="455" alt="Screen Shot 2022-12-09 at 10 27 13 PM" src="https://user-images.githubusercontent.com/82349855/206826944-260550d8-6bb3-4b7c-916c-d5c5c4aa068e.png">
 
 ### Tutorial
 

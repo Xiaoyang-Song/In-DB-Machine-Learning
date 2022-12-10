@@ -1,4 +1,3 @@
-
 - xs2485 Xiaoyang Song
   - Wrote the example
 - hl3608 Han Liu
@@ -8,21 +7,20 @@
 
 ### Introduction
 
-From 4111 lectures, we learned that SQL's unique features could help us solve many problems simply. For example, extract data with the simple SELECT statement, do aggregation with functions like COUNT and AVG, solve graph problems like what we did in Project 2, and even solve recursive problems with WITH Queries, etc. One natural thing to think about is: can we use SQL to do even more things, like Machine learning? 
+From 4111 lectures, we learned that SQL's unique features could help us solve many problems simply. For example, extract data with the simple _SELECT_ statement and _WHERE_ clause, do simple math using aggregation functions like _COUNT()_ and _AVG()_, solve both elementary and complex graph problems like what we did in Project 2, and even solve complicated problems like Fibonacci sequences using recursive WITH Queries, etc. Witnessing how powerful SQL and DBMS can do, one natural thing to think about is: can we use SQL to do even more advanced tasks, like Machine Learning?
 
-The answer is YES! 
+The answer is YES!
 
-As we know, data is the most important ingredient in Machine Learning (ML). Traditionally, we train our ML models outside the database, which can be complex and expensive. However, with the idea of In-DB Machine Learning, we can train ML models inside the database. In general, ML models are processed as regular tables inside the database, and we can simply interact with ML models with SQL queries. 
+As we know, data is the most important ingredient in Machine Learning (ML). Traditionally, we train our ML models outside the database, which can be complex and expensive. However, with the idea of In-DB Machine Learning, we can train ML models inside the database. In general, ML models are processed as regular tables inside the database, and we can simply interact with ML models with SQL queries.
 
 #### Why using SQL to do ML (Pros):
+
 - DBMS has a very good property called Integrity Constraint (IC), which make the data clean. As Prof. Wu mentioned in the very first lecture, people spent about 80% of the time doing data cleaning. Doing ML directly in DB can mitigate this issue.
 - Instead of downloading and doing ML elsewhere, doing ML in DB is more efficient.
 - Can avoid moving data around.
 - Exploit advantages of query optimization procedure of DBMS.
 
-
 In this tutorial, we will introduce an open-source library for scalable in-database analytics and machine learning called [Apache MADlib](https://madlib.apache.org/index.html). It provides data-parallel implementations of mathematical, statistical, graph and machine learning methods for structured and unstructured data. Another trending in-database ML library/platform is [MindsDB](https://mindsdb.com/). Compared to MindsDB, MADlib has been around longer but only runs on PostgreSQL and Greenplum Database. MADlib employs its built-in functions to support in-db ML. MindsDB, by contrast, is more like an intelligence layer on top of the database. It is a cloud platform that can connect to any database and support a variety of ML frameworks.
-
 
 ### The Problem and Solution
 
@@ -31,8 +29,6 @@ In this tutorial, we will introduce an open-source library for scalable in-datab
 - What are the alternatives, and what are the pros and cons of the technology compared with alternatives? (what makes it unique?)
 - How it relates to concpts from 4111.
 - **NOTE: illustrating the relationship with concpts from this class IS BY FAR THE MOST IMPORTANT ASPECT of this extra credit assignment**
-
-
 
 Remember, the more detailed and thorough you contrast the technology with the topics in class the better.
 We've discussed the relational model, constraints, SQL features, transactions, query execution and optimization, and recovery. Pick a subset of topics to really dive deep and compare and contrast the similarities and differences between our discussion in class and the technology.
@@ -43,7 +39,12 @@ We've discussed the relational model, constraints, SQL features, transactions, q
 
 #### Example
 
-Construct and describe a compelling example for the technology that is motivated by one member's project 1 application. The example and tutorial must be original.
+In our project 1, we made a Web App about the restaurant ratings and violation records in New York City, where we displayed restaurants locations, ratings, and violation records, and enabled our users to interactively browse those records. In addition, in our Web App, users are also allowed to like/hate and post comments to the restaurants. When we are doing project 1, we originally want to do a recommendation system, which can automatically recommend restaurant to users based on the quality of the restaurants. However, we haven't done that due to time limit.
+
+The basic logic is that we want to recommend restaurants to users based on the overall quality of the restaurants, which are dictated by the attributes **ratings** in the table **Grade** of our project 1. However, those grades are static and will be updated once a month when new inspections are done by government staffs. Therefore, we want to utilize Machine Learning, specifically Linear Regression, to automatically predict the latest **ratings** for all the restaurants in the New York city based on 4 statistics:
+
+- the total number of likes they received (**total_num_likes**)
+- the total number of hates they received (**total_num_hates**)
 
 #### Tutorial
 

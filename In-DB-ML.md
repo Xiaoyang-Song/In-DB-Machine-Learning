@@ -41,6 +41,10 @@ We've discussed the relational model, constraints, SQL features, transactions, q
 
 ## Tutorial
 
+### Setup
+
+To get started, just [create a free MindsDB Cloud account](https://cloud.mindsdb.com/signup) and login to use its cloud editor.
+
 ### Example
 
 In our project 1, we made a Web App about the restaurant ratings and violation records in New York City, where we displayed restaurants locations, ratings, and violation records, and enabled our users to interactively browse those records. In addition, in our Web App, users are also allowed to like/hate and post comments to the restaurants. When we are doing project 1, we originally want to do a recommendation system, which can automatically recommend restaurant to users based on the quality of the restaurants. However, we haven't done that due to time limit.

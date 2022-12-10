@@ -20,7 +20,13 @@ As we know, data is the most important ingredient in Machine Learning (ML). Trad
 - Can avoid moving data around.
 - Exploit advantages of query optimization procedure of DBMS.
 
-In this tutorial, we will introduce [MindsDB](https://mindsdb.com/), an open-source AI layer for existing databases that allows users to effortlessly develop, train and deploy state-of-the-art machine learning models using SQL queries. Another popular in-database ML library is [Apache MADlib](https://madlib.apache.org/index.html). Compared to MindsDB, MADlib has been around longer but only runs on PostgreSQL and Greenplum Database. MADlib employs its built-in functions to support in-db ML. MindsDB, by contrast, is more like an intelligence layer on top of the database. It is a cloud platform that can connect to any database and support a variety of ML frameworks.
+In this tutorial, we will introduce [MindsDB](https://mindsdb.com/), an open-source AI layer for existing databases that allows users to effortlessly develop, train and deploy state-of-the-art machine learning models using SQL queries. There are many other platforms or extensions that are related to doing machine learning in database. One popular approach is to use [MADlib](https://madlib.apache.org/). We also thoroughly researched on it but we found that there are five apparent advantages of using **MindsDB** over **MADlib**:
+
+1. MADlib only supports Postgresql with certain versions: for example, Postgresql 14.5 and the latest version of 15.0 is not supported by MADlib. Therefore, it is not compatible with the latest release and can not exploit the advantages of those new SQL features. (In addition, changing versions is a great pain for most programmers)
+2. MADlib is harder to install and use in general. The installation has many prerequisites (i.e. installation of other packages are also required). However, for MindsDB, there is no need of installation at all! It is an online platform.
+3. In MindsDB, it is easy to visualize the underlying training process and models, whereas in MADlib, it is not easy to achieve.
+4. Compared to MindsDB, MADlib has been around longer but only runs on PostgreSQL and Greenplum Database. MADlib employs its built-in functions to support in-db ML. MindsDB, by contrast, is more like an intelligence layer on top of the database. It is a cloud platform that can connect to any database and support a variety of ML frameworks.
+5. MindsDB is new compared to MADlib, why don't we stick with new technology if the older one is not better!
 
 ### The Problem and Solution
 
@@ -106,13 +112,6 @@ Now, with our demo data, we can proceed to do Machine Learning using **MindsDB**
 
 #### Get started with MindsDB
 
-### Reflection & Conclusion
-
-There are many other platforms or extensions that are related to doing machine learning in database. One popular approach is to use [MADlib](https://madlib.apache.org/). We also thoroughly researched on it but we found that there are four advantages of using **MindsDB** over **MADlib**:
-
-1. MADlib only supports Postgresql with certain versions: for example, Postgresql 14.5 and the latest version of 15.0 is not supported by MADlib. Therefore, it is not compatible with the latest release and can not exploit the advantages of those new SQL features. (In addition, changing versions is a great pain for most programmers)
-2. MADlib is harder to install and use in general. The installation has many prerequisites (i.e. installation of other packages are also required). However, for MindsDB, there is no need of installation at all! It is an online platform.
-3. In MindsDB, it is easy to visualize the underlying training process and models, whereas in MADlib, it is not easy to achieve.
-4. MindsDB is new compared to MADlib, why don't we stick with new technology if the older one is not better!
+### Conclusion
 
 In general, doing Machine Learning in Database is not hard with MindsDB and its advantages are obvious as we introduced in the first few sections of this tutorial. Let's keep the data in the Database and do ML in database in the future!

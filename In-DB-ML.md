@@ -116,6 +116,21 @@ To get started, just [create a free MindsDB Cloud account](https://cloud.mindsdb
 
 #### Connecting to the database
 
+Now, we need to connect to the database. For illustration purpose, we connect to the project1 part2 database.
+
+```sql
+CREATE DATABASE projdb
+WITH ENGINE = "postgres",
+PARAMETERS = {
+    "user": <Your-UNI>,
+    "password": <Your-Passcode>,
+    "host": "w4111.cisxo09blonu.us-east-1.rds.amazonaws.com",
+    "database": "proj1part2"
+};
+```
+
+If you want to connect to your local database or other database, just modify the corresponding fields in the above query. Then, simply run the query in the MindsDB console and you should be able to connect to your database in the cloud platform like the following:
+
 #### Create and train a ML model
 
 ```sql

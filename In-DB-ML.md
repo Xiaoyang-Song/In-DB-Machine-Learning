@@ -112,6 +112,32 @@ Now, with our demo data, we can proceed to do Machine Learning using **MindsDB**
 
 #### Get started with MindsDB
 
+#### Connecting to the database
+
+
+#### Create and train a ML model
+
+```sql
+CREATE MODEL 
+  mindsdb.restaurants_ratings_model
+FROM projdb
+  (SELECT rating, num_likes,num_hates, num_violations, num_comments FROM demo)
+PREDICT rating;
+```
+
+Here we create a model called _restaurants_ratings_model_, SELECT columns to be used for training and validation, and state to predict _rating_.
+
+```sql
+SELECT *
+FROM mindsdb.models
+WHERE name='restaurants_ratings_model';
+```
+Run the query above to check on model status and its statistics. We got:
+
+<img width="1817" alt="image" src="https://user-images.githubusercontent.com/30332629/206827762-160ffe30-55d2-4a6d-99be-b4ebce7eb4a9.png">
+
+After the column STATUS becomes _complete_, we are good to go have some predictions!
+
 ### Conclusion
 
 In general, doing Machine Learning in Database is not hard with MindsDB and its advantages are obvious as we introduced in the first few sections of this tutorial. Let's keep the data in the Database and do ML in database in the future!

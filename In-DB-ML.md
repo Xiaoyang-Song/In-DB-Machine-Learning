@@ -170,7 +170,18 @@ The result gives us:
 
 <img width="375" alt="image" src="https://user-images.githubusercontent.com/30332629/206828047-c15c6961-6a92-42d2-b5f4-a4ee232e4c18.png">
 
+#### Model Analysis
 
+To check which ML model MindsDB used on our dataset, simply execute:
+
+```sql
+DESCRIBE MODEL mindsdb.restaurant_ratings_model.model;
+```
+
+
+<img width="726" alt="image" src="https://user-images.githubusercontent.com/30332629/206828089-2bf1a403-392d-42d4-ab4f-0767f6475846.png">
+
+Table above indicates that MindsDB tries several ML models and selects RandomForest for our datase.
 
 ### Conclusion
 

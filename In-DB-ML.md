@@ -1,7 +1,9 @@
 - xs2485 Xiaoyang Song
-  - Wrote the example
+  - Researched on both MADlib and MindsDB.
+  - Wrote the introduction and problems setups.
 - hl3608 Han Liu
-  - Wrote the introduction
+  - Researched on both MADlib and MindsDB.
+  - Wrote the examples and tutorials.
 
 ## In-DB machine learning - MindsDB
 

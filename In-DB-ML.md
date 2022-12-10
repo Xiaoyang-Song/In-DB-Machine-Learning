@@ -129,6 +129,8 @@ If you want to connect to your local database or other database, just modify the
 
 #### Create and train a ML model
 
+With all of the demo data, let's start training!
+
 ```sql
 CREATE MODEL
   mindsdb.restaurants_ratings_model
@@ -137,7 +139,11 @@ FROM projdb
 PREDICT rating;
 ```
 
-Here we create a model called _restaurants_ratings_model_, SELECT columns to be used for training and validation, and state to predict _rating_.
+Here are what we did using the above code:
+
+- CREATE a model called _restaurants_ratings_model_.
+- SELECT columns to be used for training and validation.
+- Set the target of prediction to be _rating_.
 
 ```sql
 SELECT *

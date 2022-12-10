@@ -191,7 +191,7 @@ The result is given by the following:
 
 #### Model Analysis
 
-To check which ML model MindsDB used on our dataset, simply execute:
+By default, MindsDB will train many possible ML models for the task you specified at the same time. To check which ML model MindsDB used on our dataset, simply execute the following query:
 
 ```sql
 DESCRIBE MODEL mindsdb.restaurant_ratings_model.model;
@@ -199,7 +199,7 @@ DESCRIBE MODEL mindsdb.restaurant_ratings_model.model;
 
 <img width="726" alt="image" src="https://user-images.githubusercontent.com/30332629/206828089-2bf1a403-392d-42d4-ab4f-0767f6475846.png">
 
-Table above indicates that MindsDB tries several ML models and selects RandomForest for our datase.
+The table above exhibits all the ML models that MindsDB has tried and indicates that it selected RandomForest for our regression task.
 
 ### Conclusion
 

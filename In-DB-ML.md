@@ -113,7 +113,7 @@ We can use the following the visualize the table:
 
 The table looks like the following:
 
-<img width="455" alt="Screen Shot 2022-12-09 at 10 27 13 PM" src="https://user-images.githubusercontent.com/82349855/206826944-260550d8-6bb3-4b7c-916c-d5c5c4aa068e.png">
+<img width="300" alt="Screen Shot 2022-12-09 at 10 27 13 PM" src="https://user-images.githubusercontent.com/82349855/206826944-260550d8-6bb3-4b7c-916c-d5c5c4aa068e.png">
 
 ### MindsDB Tutorials
 
@@ -139,6 +139,8 @@ PARAMETERS = {
 ```
 
 If you want to connect to your local database or other database, just modify the corresponding fields in the above query. Then, simply run the query in the MindsDB console and you should be able to connect to your database in the cloud platform like the following:
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/30332629/206828479-5499d890-13af-4783-8d98-ac54cb3b49b5.png">
 
 #### Create and train a ML model
 

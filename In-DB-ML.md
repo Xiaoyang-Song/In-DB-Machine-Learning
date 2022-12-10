@@ -39,13 +39,9 @@ In this tutorial, we will introduce [MindsDB](https://mindsdb.com/), an open-sou
 Remember, the more detailed and thorough you contrast the technology with the topics in class the better.
 We've discussed the relational model, constraints, SQL features, transactions, query execution and optimization, and recovery. Pick a subset of topics to really dive deep and compare and contrast the similarities and differences between our discussion in class and the technology.
 
-## Tutorial
+## Tutorial & Example Walkthrough
 
-### Setup
-
-To get started, just [create a free MindsDB Cloud account](https://cloud.mindsdb.com/signup) and login to use its cloud editor.
-
-### Example
+### Example Problems
 
 In our project 1, we made a Web App about the restaurant ratings and violation records in New York City, where we displayed restaurants locations, ratings, and violation records, and enabled our users to interactively browse those records. In addition, in our Web App, users are also allowed to like/hate and post comments to the restaurants. When we are doing project 1, we originally want to do a recommendation system, which can automatically recommend restaurant to users based on the quality of the restaurants. However, we haven't done that due to time limit.
 
@@ -110,19 +106,20 @@ The table looks like the following:
 
 <img width="455" alt="Screen Shot 2022-12-09 at 10 27 13 PM" src="https://user-images.githubusercontent.com/82349855/206826944-260550d8-6bb3-4b7c-916c-d5c5c4aa068e.png">
 
-### Tutorial
+### MindsDB Tutorials
 
 Now, with our demo data, we can proceed to do Machine Learning using **MindsDB**.
 
 #### Get started with MindsDB
 
-#### Connecting to the database
+To get started, just [create a free MindsDB Cloud account](https://cloud.mindsdb.com/signup) and login to use its cloud editor.
 
+#### Connecting to the database
 
 #### Create and train a ML model
 
 ```sql
-CREATE MODEL 
+CREATE MODEL
   mindsdb.restaurants_ratings_model
 FROM projdb
   (SELECT rating, num_likes,num_hates, num_violations, num_comments FROM demo)
@@ -136,6 +133,7 @@ SELECT *
 FROM mindsdb.models
 WHERE name='restaurants_ratings_model';
 ```
+
 Run the query above to check on model status and its statistics. We got:
 
 <img width="1817" alt="image" src="https://user-images.githubusercontent.com/30332629/206827762-160ffe30-55d2-4a6d-99be-b4ebce7eb4a9.png">
@@ -181,7 +179,6 @@ To check which ML model MindsDB used on our dataset, simply execute:
 ```sql
 DESCRIBE MODEL mindsdb.restaurant_ratings_model.model;
 ```
-
 
 <img width="726" alt="image" src="https://user-images.githubusercontent.com/30332629/206828089-2bf1a403-392d-42d4-ab4f-0767f6475846.png">
 
